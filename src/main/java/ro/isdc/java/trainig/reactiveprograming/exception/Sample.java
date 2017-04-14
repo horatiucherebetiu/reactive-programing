@@ -1,6 +1,8 @@
-package ro.isdc.java.trainig.reactiveprograming;
+package ro.isdc.java.trainig.reactiveprograming.exception;
 
 import io.reactivex.Observable;
+import io.reactivex.Observer;
+import io.reactivex.disposables.Disposable;
 
 import java.util.Arrays;
 import java.util.List;
@@ -17,9 +19,9 @@ public class Sample {
         System.out.println("Got observable");
 
         feed.subscribe(
-            System.out::println,
-            System.out::println,
-            () -> System.out.println("DONE")
+                System.out::println,
+                err -> System.out.println("ERROR: " + err),
+                () -> System.out.println("DONE")
         );
     }
 }

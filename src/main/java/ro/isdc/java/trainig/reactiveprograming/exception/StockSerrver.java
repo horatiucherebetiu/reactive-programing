@@ -1,4 +1,4 @@
-package ro.isdc.java.trainig.reactiveprograming;
+package ro.isdc.java.trainig.reactiveprograming.exception;
 
 import io.reactivex.Observable;
 import io.reactivex.ObservableEmitter;

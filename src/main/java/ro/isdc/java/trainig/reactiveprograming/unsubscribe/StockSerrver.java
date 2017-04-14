@@ -1,7 +1,8 @@
-package ro.isdc.java.trainig.reactiveprograming;
+package ro.isdc.java.trainig.reactiveprograming.unsubscribe;
 
 import io.reactivex.Observable;
 import io.reactivex.ObservableEmitter;
+import ro.isdc.java.trainig.reactiveprograming.StockInfo;
 
 import java.util.List;
 

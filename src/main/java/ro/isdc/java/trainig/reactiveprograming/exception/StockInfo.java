@@ -1,6 +1,5 @@
-package ro.isdc.java.trainig.reactiveprograming;
+package ro.isdc.java.trainig.reactiveprograming.exception;
 
-import java.time.Instant;
 import java.util.Random;
 
 /**
@@ -43,7 +42,7 @@ public class StockInfo {
 
     public static StockInfo fetch(String symbol) {
         if ("INIC".equals(symbol)) {
-            return new StockInfo(symbol, 7);
+           throw new RuntimeException("Unknow symbol = " + symbol);
         }
         return new StockInfo(symbol, new Random().nextInt(5) + 10);
     }
